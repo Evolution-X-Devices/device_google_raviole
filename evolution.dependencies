@@ -4,8 +4,21 @@
     "target_path": "device/google/gs101"
   },
   {
-    "repository": "device/google/raviole-kernels/6.1",
-    "target_path": "device/google/raviole-kernels/6.1",
-    "remote": "aosp-raviole"
+    "remote": "evo-tensor",
+    "repository": "device_google_raviole-kernels_evolution",
+    "target_path": "device/google/raviole-kernels/evolution",
+    "branch": "bka"
+  },
+  {
+    "remote": "evo-tensor",
+    "repository": "vendor_google_oriole",
+    "target_path": "vendor/google/oriole",
+    "branch": "bka"
+  },
+  {
+    "remote": "evo-tensor",
+    "repository": "vendor_google_raven",
+    "target_path": "vendor/google/raven",
+    "branch": "bka"
   }
 ]
