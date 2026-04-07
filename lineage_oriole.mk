@@ -7,6 +7,9 @@
 # Inherit some common stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit some common Evolution X stuff
+TARGET_DISABLE_EPPE := true
+
 # Inherit device configuration
 DEVICE_CODENAME := oriole
 DEVICE_PATH := device/google/raviole
@@ -17,6 +20,9 @@ $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+
+# Inherit some common Evolution X stuff
+$(call inherit-product, device/google/gs101/evolution_common.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400

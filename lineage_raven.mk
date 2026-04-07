@@ -7,11 +7,17 @@
 # Inherit some common stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit some common Evolution X stuff
+TARGET_DISABLE_EPPE := true
+
 # Inherit device configuration
 DEVICE_CODENAME := raven
 DEVICE_PATH := device/google/raviole
 VENDOR_PATH := vendor/google/raven
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
+
+# Inherit some common Evolution X stuff
+$(call inherit-product, device/google/gs101/evolution_common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
